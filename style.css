@@ -39,7 +39,7 @@ body {
     margin: auto;
 }
 
-/* titles ============*/
+/* Titles ============*/
 h2 {
     margin-top: 3.2rem;
     margin-bottom: 0.8rem;
@@ -48,7 +48,7 @@ h2 {
     font-weight: normal;
 }
 
-/* Links e botões ============*/
+/* Links and Buttons ============*/
 a {
     color: var(--green);
     text-decoration: none;
@@ -63,13 +63,12 @@ button {
     height: 50px;
 
     border: none;
+    border-radius: 0.25rem;
 
     color: white;
     background: var(--green);
 
     padding: 0;
-
-    border-radius: 0.25rem;
 
     cursor: pointer;
 }
@@ -101,7 +100,7 @@ button:hover {
     opacity: 1;
 }
 
-/* header ============*/
+/* Header ============*/
 header {
     background: #2d4a22;
     padding: 2rem 0 10rem;
@@ -123,7 +122,7 @@ header {
     margin-top: 0;
 }
 
-/* cards ============*/
+/* Cards ============*/
 .card {
     background: #fff;
     padding: 1.5rem 2rem;
@@ -154,7 +153,7 @@ header {
     color: #fff;
 }
 
-/* table ============*/
+/* Table ============*/
 #transaction {
     display: block;
     width: 100%;
@@ -281,7 +280,7 @@ td.expense {
     width: 48%;
 }
 
-/* footer ============*/
+/* Footer ============*/
 footer {
     text-align: center;
     padding: 4rem 0 2rem;
@@ -290,9 +289,7 @@ footer {
     opacity: 0.6;
 }
 
-
-
-/* responsivo ============*/
+/* Responsive ============*/
 
 @media screen and (min-width: 800px) {
     html {
@@ -302,6 +299,6 @@ footer {
     #balance {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 2rem   ;
+        gap: 2rem;
     }
 }
