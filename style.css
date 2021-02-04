@@ -1,9 +1,13 @@
 /* global ============*/
 :root {
     --dark-blue: #363f5f;
-    --green: #49aa26;
-    --light-green: #3dd705;
+    --dark-purple: #654D67;
+    --light-purple: #9D5875;
+    --low-purple: #E5ABB2;
     --red: #e92929;
+    --green: #12a454;
+    --white: #FFF;
+    --bg: #F6EDE2;
 }
 
 * {
@@ -17,7 +21,7 @@ html {
 }
 
 body {
-    background: #f0f2f2;
+    background: var(--bg);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -50,12 +54,12 @@ h2 {
 
 /* Links and Buttons ============*/
 a {
-    color: var(--green);
+    color: var(--dark-purple);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--light-green);
+    color: var(--low-purple);
 }
 
 button {
@@ -66,15 +70,17 @@ button {
     border-radius: 0.25rem;
 
     color: white;
-    background: var(--green);
+    background: var(--dark-purple);
 
     padding: 0;
 
     cursor: pointer;
+
+    transition: background 500ms linear;
 }
 
 button:hover {
-    background: var(--light-green);
+    background: var(--light-purple);
 }
 
 .button.new {
@@ -94,6 +100,8 @@ button:hover {
     justify-content: center;
 
     opacity: 0.6;
+
+    transition: opacity 500ms linear;
 }
 
 .button.cancel:hover {
@@ -102,29 +110,29 @@ button:hover {
 
 /* Header ============*/
 header {
-    background: #2d4a22;
+    background: var(--dark-purple);
     padding: 2rem 0 10rem;
     text-align: center;
 }
 
 #logo {
-    color: #FFF;
+    color: var(--white);
     font-weight: 100;
 }
 
 /* balance ============*/
 #balance {
-    margin-top: -8rem;
+    margin-top: -4rem;
 }
 
 #balance h2 {
-    color: #FFF;
+    color: var(--white);
     margin-top: 0;
 }
 
 /* Cards ============*/
 .card {
-    background: #fff;
+    background: var(--white);
     padding: 1.5rem 2rem;
     border-radius: 0.25rem;
 
@@ -149,8 +157,8 @@ header {
 }
 
 .card.total {
-    background: var(--green);
-    color: #fff;
+    background: var(--light-purple);
+    color: var(--white);
 }
 
 /* Table ============*/
@@ -177,9 +185,11 @@ table tbody tr td:last-child {
 }
 
 table thead th {
-    background: #fff;
-
+    background: var(--white);
+    
+    color: var(--dark-purple);
     font-weight: normal;
+
     padding: 1rem 2rem;
 
     text-align: left;
@@ -194,7 +204,7 @@ table tbody tr:hover {
 }
 
 table tbody td {
-    background: #fff;  
+    background: var(--white);  
     padding: 1rem 2rem;
 }
 
@@ -203,7 +213,7 @@ td.description {
 }
 
 td.income {
-    color: #12a454;
+    color: var(--green);
 }
 
 td.expense {
@@ -256,6 +266,8 @@ td.expense {
     border: none;
     border-radius: 0.2rem;
 
+    font-size: 1.125rem;
+
     padding: 0.8rem;
 
     width: 100%;
@@ -266,7 +278,7 @@ td.expense {
 }
 
 .input-group small {
-    opacity: 0.4;
+    opacity: 0.7;
 }
 
 .input-group.actions {
@@ -286,7 +298,7 @@ footer {
     padding: 4rem 0 2rem;
     color: var(--dark-blue);
 
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 /* Responsive ============*/
